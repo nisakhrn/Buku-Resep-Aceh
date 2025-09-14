@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resep Keumamah Aceh</title>
+    <title>Resep Keumamah</title>
     <style>
-        /* ... CSS tetap sama persis, tidak berubah ... */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #2E8B57 0%, #3CB371 50%, #20B2AA 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+        .header {
+            background: linear-gradient(135deg, #006400 0%, #228B22 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .header p { font-size: 1.2em; font-style: italic; }
+        .fish-icon { font-size: 2em; margin: 0 10px; }
+        .content { padding: 40px; }
+        .intro {
+            background: #F0FFF0;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border-left: 5px solid #228B22;
+        }
+        .intro h2 { color: #006400; margin-bottom: 15px; }
+        .history-box {
+            background: #E6F3FF;
+            border: 2px solid #4682B4;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+        .recipe-section {
+            background: white;
+            margin: 25px 0;
+            border-radius: 15px;
+            padding: 25px;
+            border: 2px solid #E0FFE0;
+        }
+        .recipe-section h3 {
+            color: #006400;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #228B22;
+            padding-bottom: 10px;
+        }
+        .ingredients ul, .steps ol { margin-left: 20px; line-height: 1.6; }
+        .steps ol li { margin: 10px 0; }
+        .tips, .variations, .nutrition { line-height: 1.6; }
+        .footer {
+            background: #2F4F4F;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -23,66 +90,66 @@
         <div class="content">
             <div class="intro">
                 <h2>Tentang Keumamah</h2>
-                <p>Keumamah adalah salah satu hidangan tradisional khas Aceh yang terbuat dari ikan asin (biasanya ikan tongkol atau ikan kayu) yang dimasak dengan sayuran dan bumbu rempah khas Aceh. Hidangan ini sangat populer karena rasanya yang gurih, praktis, dan bergizi tinggi. Keumamah sering disajikan sebagai lauk pendamping nasi dan menjadi makanan favorit masyarakat Aceh karena mudah dibuat dan tahan lama.</p>
+                <p>Keumamah adalah salah satu hidangan tradisional khas Aceh yang terbuat dari ikan tongkol kering. Masakan ini punya cita rasa gurih, asin, pedas, dan bisa bertahan lama sehingga sering dibawa sebagai bekal.</p>
             </div>
 
             <div class="history-box">
-                <h3><span>📜</span> Sejarah & Filosofi</h3>
-                <p>Keumamah lahir dari kearifan nenek moyang Aceh dalam mengawetkan ikan laut. Nama "Keumamah" berasal dari bahasa Aceh yang berarti "dicampur" atau "diaduk", merujuk pada cara memasaknya yang mencampurkan ikan asin dengan berbagai sayuran. Hidangan ini mencerminkan kehidupan masyarakat pesisir Aceh yang memanfaatkan hasil laut sebagai sumber protein utama.</p>
-            </div>
-
-            <div class="serving-info">
-                <h3>Informasi Sajian</h3>
-                <div class="serving-details">
-                    <div class="serving-item">
-                        <span>Porsi: 4-5 orang</span>
-                    </div>
-                    <div class="serving-item">
-                        <span>Waktu: 30 menit</span>
-                    </div>
-                    <div class="serving-item">
-                        <span>Level Pedas: Sedang</span>
-                    </div>
-                </div>
+                <h3>📜 Sejarah & Filosofi</h3>
+                <p>Keumamah dulunya makanan penting bagi para pejuang Aceh karena tahan lama, bergizi tinggi, dan mudah dibawa. Filosofinya melambangkan ketahanan, kesederhanaan, dan kekuatan masyarakat Aceh.</p>
             </div>
 
             <div class="recipe-section ingredients">
-                <!-- Bagian bahan-bahan tetap sama -->
+                <h3>Bahan-Bahan</h3>
+                <ul>
+                    <li>300 gr ikan tongkol (diasinkan, dikeringkan, lalu disuwir)</li>
+                    <li>200 gr kacang panjang, potong serong</li>
+                    <li>150 gr tauge segar</li>
+                    <li>100 gr kangkung, siangi</li>
+                    <li>Bumbu halus: 5 cabai merah, 3 siung bawang putih, 5 siung bawang merah, 1 ruas kunyit, 1 sdt ketumbar sangrai</li>
+                    <li>Garam & gula secukupnya</li>
+                </ul>
             </div>
 
             <div class="recipe-section steps">
-                <!-- Bagian langkah-langkah tetap sama -->
+                <h3>Langkah Pembuatan</h3>
+                <ol>
+                    <li>Rendam ikan asin sekitar 15 menit, tiriskan, lalu suwir kasar.</li>
+                    <li>Potong sayuran sesuai ukuran.</li>
+                    <li>Haluskan bumbu lalu tumis sampai harum.</li>
+                    <li>Masukkan ikan, aduk rata, tambahkan sedikit air.</li>
+                    <li>Masukkan sayuran, masak hingga matang tapi tetap segar.</li>
+                </ol>
             </div>
 
             <div class="recipe-section tips">
-                <!-- Bagian tips tetap sama -->
+                <h3>Tips & Trik</h3>
+                <ul>
+                    <li>Gunakan ikan asin berkualitas, tidak terlalu kering.</li>
+                    <li>Sesuaikan tingkat keasinan dengan merendam lebih lama bila perlu.</li>
+                    <li>Sajikan dengan nasi panas untuk rasa maksimal.</li>
+                </ul>
             </div>
 
             <div class="recipe-section variations">
                 <h3>Variasi Keumamah</h3>
-                <div class="variations-grid">
-                    <div class="variation-card">
-                        <h4>🥥 Keumamah Santan</h4>
-                        <p>Tambahkan 200ml santan encer di akhir masakan untuk rasa yang lebih gurih dan creamy. Cocok untuk yang kurang suka rasa terlalu asam.</p>
-                    </div>
-                    <div class="variation-card">
-                        <h4>🍅 Keumamah Asam Tomato</h4>
-                        <p>Ganti asam jawa dengan 2 buah tomat hijau yang dipotong-potong untuk rasa asam yang lebih segar dan warna yang menarik.</p>
-                    </div>
-                    <div class="variation-card">
-                        <h4>🌶 Keumamah Pedas</h4>
-                        <p>Tambahkan 5-7 cabai rawit dan 2 sdm sambal ganja untuk versi yang lebih pedas dan menggigit khas Aceh.</p>
-                    </div>
-                </div>
+                <ul>
+                    <li><b>Keumamah Santan:</b> Tambahkan santan untuk rasa gurih.</li>
+                    <li><b>Keumamah Asam Tomato:</b> Tambahkan tomat segar sebagai penyeimbang.</li>
+                </ul>
             </div>
 
             <div class="recipe-section nutrition">
-                <!-- Bagian manfaat gizi tetap sama -->
+                <h3>Manfaat Gizi</h3>
+                <ul>
+                    <li>Protein tinggi dari ikan.</li>
+                    <li>Serat alami dari sayuran segar.</li>
+                    <li>Kaya vitamin dan mineral.</li>
+                </ul>
             </div>
         </div>
 
         <div class="footer">
-            <p>"Keumamah - Perpaduan sempurna antara protein laut dan kesegaran sayuran dalam harmoni rasa Aceh 🐟🥬"</p>
+            <p>"Keumamah - Perpaduan sempurna antara protein laut dan sayuran Aceh 🐟🥬"</p>
         </div>
     </div>
 </body>
